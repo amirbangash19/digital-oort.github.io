@@ -95,12 +95,13 @@ i.right {
 .section-head h2 {
   position: relative;
   transform: rotate(270deg);
-  font-size: 150px;
+  font-size: 10em;
   font-weight: bolder;
+  font-weight: 900;
   text-transform: uppercase;
   color: var(--delta);
   font-family: var(--font-family-barlow);
-  opacity: 0.12;
+  opacity: 0.1;
 }
 .services-section .section-head {
   left: -11%;
@@ -155,6 +156,13 @@ i.right {
 .mx-6 {
   margin-left: 5rem !important;
   margin-right: 5rem !important;
+}
+.my-6 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+.mb-6 {
+  margin-bottom: 6rem !important;
 }
 /*--------- 
 header 
@@ -392,6 +400,12 @@ work section
 .work-section .section-title h2 {
   color: var(--white);
 }
+.work-section .content {
+  position: absolute;
+}
+.work-section .main-content {
+  position: relative;
+}
 .work-section .content h4 {
   font-size: 4rem;
   color: var(--white);
@@ -415,24 +429,24 @@ work section
 .work-section .map-points {
   color: var(--tart-orange);
 }
-.work-section .map-points i.mp-1 {
+.work-section .map-points img.mp-1 {
   position: absolute;
   left: 10%;
   font-size: 1rem;
 }
-.work-section .map-points i.mp-2 {
+.work-section .map-points img.mp-2 {
   position: absolute;
   left: 19%;
   top: 20%;
   font-size: 1rem;
 }
-.work-section .map-points i.mp-3 {
+.work-section .map-points img.mp-3 {
   position: absolute;
   left: 53%;
   top: 22%;
   font-size: 1rem;
 }
-.work-section .map-points i.mp-4 {
+.work-section .map-points img.mp-4 {
   position: absolute;
   right: 25%;
   top: 44%;
@@ -442,26 +456,14 @@ work section
   display: flex;
   align-items: center;
   position: absolute;
-  top: 47%;
-  left: 20%;
+  top: 8%;
+  left: 35%;
   opacity: 0.8;
 }
-.line2 {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 47%;
-  left: 48%;
-  opacity: 0.8;
-}
-
-.line,
-.line2,
-.line3 img {
+.line img {
   width: 220px;
 }
-.line i,
-.line2 i {
+.line i {
   color: var(--white);
 }
 /* -------------
@@ -470,6 +472,7 @@ client section
 .client-section {
   height: 100vh;
   padding: 80px 0 80px;
+  position: relative;
 }
 .client-section .section-title p {
   font-size: 0.9em;
@@ -480,11 +483,20 @@ client section
   font-family: var(--font-family-barlow);
 }
 .client-section .section-head {
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  transform: translateX(-10px);
+  width: 100%;
+  opacity: 0.5;
 }
 .client-section .section-head h2 {
   transform: none;
+  text-align: center;
+  transform: none;
+  text-align: center;
+  font-size: 15em;
+  font-weight: 900;
 }
 /* -------------
 blog section
@@ -585,7 +597,7 @@ footer section
 .footer-section {
   padding: 0;
   margin: 0;
-  /* position: relative; */
+  margin-top: -30px;
 }
 .footer-section .footer a {
   text-transform: capitalize;
@@ -622,14 +634,9 @@ footer section
 .footer-section .footer .social i {
   color: var(--tart-orange);
   margin: auto 10px;
+  font-size: 1.5em;
 }
 .footer-section .footer .social i:last-child {
   margin-right: 0;
 }
 /* end */
-.section {
-  width: 100%;
-  height: 100%;
-  height: 100vh;
-  transition: opacity 1s;
-}

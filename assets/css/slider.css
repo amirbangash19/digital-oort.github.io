@@ -7,18 +7,23 @@
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
   cursor: pointer;
 }
 i.prev.fas.fa-caret-left.slick-arrow {
   position: absolute;
-  bottom: -60px;
-  left: 47%;
+  bottom: -140px;
+  left: 48%;
+  transform: translateX(-48%);
 }
 i.next.fas.fa-caret-right.slick-arrow {
   position: absolute;
-  bottom: -60px;
-  left: 53%;
+  bottom: -140px;
+  left: 52%;
+  transform: translateX(-52%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Slider */
