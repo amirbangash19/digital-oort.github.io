@@ -89,13 +89,12 @@ i.right {
 }
 .section-head {
   position: absolute;
-  left: -13.5%;
+  left: -26%;
+  transform: rotate(270deg);
   pointer-events: none;
 }
 .section-head h2 {
-  position: relative;
-  transform: rotate(270deg);
-  font-size: 10em;
+  font-size: 11em;
   font-weight: bolder;
   font-weight: 900;
   text-transform: uppercase;
@@ -104,7 +103,10 @@ i.right {
   opacity: 0.1;
 }
 .services-section .section-head {
-  left: -11%;
+  left: -26%;
+}
+.services-section .section-head h2 {
+  font-size: 13em;
 }
 .section-title {
   flex: 0 0 100%;
@@ -179,12 +181,14 @@ header
   font-size: 24px;
   font-weight: 600;
   color: white;
+  margin-left: 1.5em;
 }
 .header .logo span {
   color: var(--tart-orange);
 }
 .header .header-btn .btn-1 {
   float: right;
+  margin-right: 1.5em;
 }
 /* ---------
 Home Section
@@ -248,23 +252,23 @@ Home Section
 ::placeholder {
   color: var(--white);
 }
-.home-section .scroll-down a {
+.home-section .scroll-down {
   color: var(--white);
   position: absolute;
   left: 50%;
-  bottom: 70px;
-  transform: rotate(270deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 0.7em;
+  top: 90%;
+  transform: translateX(-50%) rotate(270deg);
   text-transform: capitalize;
   opacity: 0.5;
 }
 .home-section .scroll-down a:before {
   content: "◀";
   margin-right: 20px;
+}
+.home-section .scroll-down a{
+  color: var(--white);
+  font-size: 0.8em;
+  cursor: pointer;
 }
 /* ----------
 vision section
@@ -274,6 +278,7 @@ vision section
   padding: 80px 0 80px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .vision-section .vision-video {
@@ -488,14 +493,13 @@ client section
   bottom: 10px;
   transform: translateX(-10px);
   width: 100%;
-  opacity: 0.5;
 }
 .client-section .section-head h2 {
   transform: none;
   text-align: center;
   transform: none;
   text-align: center;
-  font-size: 15em;
+  font-size: 16em;
   font-weight: 900;
 }
 /* -------------
@@ -508,6 +512,7 @@ blog section
   color: var(--white);
   display: flex;
   align-items: center;
+  position: relative;
 }
 .blog-section .section-title h2 {
   color: var(--white);
@@ -639,4 +644,9 @@ footer section
 .footer-section .footer .social i:last-child {
   margin-right: 0;
 }
+/* full page scroll hide dots */
+.dots.dots-right {
+  display: none;
+}
+
 /* end */

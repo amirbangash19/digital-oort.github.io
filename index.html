@@ -10,6 +10,8 @@
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Hamburger Menu -->
+    <link rel="stylesheet" href="./assets/css/hamburger.css">
     <!-- slider stylesheet -->
     <link rel="stylesheet" href="./assets/css/slider.css">
     <!-- Responsive -->
@@ -28,7 +30,7 @@
     <div id="main" class="scroll-container">
     <!-- header start -->
     <section class="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="logo col-md-6 col-sm-6">
                     <a href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
@@ -40,8 +42,17 @@
         </div>
     </section>
     <!-- header end -->
-    <!-- Home Section strat -->
-    <section class="home-section section" id="first">
+    <!-- Hemburger Menu start -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <!-- content     -->
+        </div>
+    </div>
+    <span class="hamburger" onclick="openNav()">&#9776;</span>
+      <!-- Hemburger Menu end -->
+      <!-- Home Section strat -->
+      <section class="home-section section" id="first">
         <div class="container">
             <div class="home-content">
                 <div class="row">
