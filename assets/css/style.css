@@ -89,24 +89,18 @@ i.right {
 }
 .section-head {
   position: absolute;
-  left: -26%;
+  left: -21%;
   transform: rotate(270deg);
   pointer-events: none;
 }
 .section-head h2 {
-  font-size: 11em;
+  font-size: 10em;
   font-weight: bolder;
   font-weight: 900;
   text-transform: uppercase;
   color: var(--delta);
   font-family: var(--font-family-barlow);
   opacity: 0.1;
-}
-.services-section .section-head {
-  left: -26%;
-}
-.services-section .section-head h2 {
-  font-size: 13em;
 }
 .section-title {
   flex: 0 0 100%;
@@ -150,9 +144,11 @@ i.right {
   width: 40px;
   height: 40px;
   text-align: center;
-  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
   cursor: pointer;
 }
 .mx-6 {
@@ -265,7 +261,7 @@ Home Section
   content: "◀";
   margin-right: 20px;
 }
-.home-section .scroll-down a{
+.home-section .scroll-down a {
   color: var(--white);
   font-size: 0.8em;
   cursor: pointer;
@@ -358,6 +354,12 @@ Service Section
   display: flex;
   align-items: center;
 }
+.services-section .section-head {
+  left: -19.5%;
+}
+.services-section .section-head h2 {
+  font-size: 11em;
+}
 .services-section h4 {
   font-size: 2rem;
   font-weight: 500;
@@ -368,6 +370,22 @@ Service Section
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.services-section .section-head {
+  position: absolute;
+  transform: none;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.services-section .section-head h2 {
+  font-size: 3em;
+  font-weight: 800;
+  opacity: 0.16;
+}
+.services-section .section-head h2 span {
+  margin-left: 0.8em;
 }
 .services-section .second-img {
   background-color: var(--black);
@@ -375,6 +393,7 @@ Service Section
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .services-section .custom-slider {
   width: auto;
@@ -401,6 +420,15 @@ work section
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+}
+.work-section .section-head {
+  left: 0;
+  bottom: 0;
+  transform: none;
+}
+.work-section .section-head h2 {
+  opacity: 0.16;
+  font-size: 15em;
 }
 .work-section .section-title h2 {
   color: var(--white);
@@ -499,8 +527,10 @@ client section
   text-align: center;
   transform: none;
   text-align: center;
-  font-size: 16em;
+  font-size: 15em;
   font-weight: 900;
+  word-spacing: 10px;
+  letter-spacing: 15px;
 }
 /* -------------
 blog section
