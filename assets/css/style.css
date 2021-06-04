@@ -372,19 +372,22 @@ Service Section
   align-items: center;
   position: relative;
 }
-.services-section .section-head {
+.services-section .first-img .section-head,
+.services-section .second-img .section-head {
   position: absolute;
   transform: none;
   top: 0;
   left: 0;
   display: block;
 }
-.services-section .section-head h2 {
+.services-section .first-img .section-head h2,
+.services-section .second-img .section-head h2 {
   font-size: 3em;
   font-weight: 800;
-  opacity: 0.16;
+  opacity: 0.26;
 }
-.services-section .section-head h2 span {
+.services-section .first-img .section-head h2 span,
+.services-section .second-img .section-head h2 span {
   margin-left: 0.8em;
 }
 .services-section .second-img {
