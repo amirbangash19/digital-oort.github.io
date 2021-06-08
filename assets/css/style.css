@@ -87,6 +87,9 @@ i.right {
   margin-left: -6px;
   transform: rotate(270deg);
 }
+section {
+  overflow: hidden;
+}
 .section-head {
   position: absolute;
   left: -21%;
@@ -329,8 +332,14 @@ project section
   background-color: var(--black);
   position: relative;
 }
+.project-section .custom-slider {
+  margin-top: 2rem;
+  position: relative !important;
+}
 .project-section .section-head {
-  display: none;
+  display: block;
+  left: 71% !important;
+  top: 40%;
 }
 .project-section .project-box {
   background: var(--white);
@@ -358,8 +367,13 @@ Service Section
 .services-section {
   height: 100vh;
   padding: 80px 0 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .services-section .section-head {
+  top: 40%;
   left: -19.5%;
 }
 .services-section .section-head h2 {
@@ -689,5 +703,84 @@ footer section
 .dots.dots-right {
   display: none;
 }
+.last-section {
+  margin-top: 7rem;
+}
 
+.nav-left {
+  background-color: black !important;
+}
+.nav-left .container {
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.nav-links h4 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 5rem;
+  transition: 250ms;
+  cursor: pointer;
+}
+.nav-links h4:hover {
+  color: #f95645;
+  transform: scale(1.03);
+}
+.nav-right {
+  background-color: white !important;
+  padding-left: 0 !important;
+}
+.nav-right p {
+  font-size: small;
+  font-weight: 500;
+}
+.hire {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+
+.btn-hire {
+  border-radius: 20px;
+  background-color: #f95645;
+  color: white !important;
+  font-size: small;
+  padding: 0.6rem 2.4rem;
+}
+
+.nav-right-bottom {
+  background-color: #f95645;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.nav-right-bottom h2 {
+  font-weight: bolder;
+  font-size: 32px;
+}
+.last-section .float-right {
+  float: right !important;
+}
+.last-section .float-left {
+  float: left !important;
+}
+.work-glass {
+  font-size: 12em !important;
+}
+.nav-social a {
+  color: #f95645 !important;
+}
+.hamburger-hr {
+  width: 100%;
+  transform: rotate(270deg);
+  color: white;
+  position: absolute;
+  left: -47.5%;
+  top: 61%;
+  height: 1.5px;
+}
 /* end */

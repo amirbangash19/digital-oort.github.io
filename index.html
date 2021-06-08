@@ -30,6 +30,7 @@
     <div id="main" class="scroll-container">
     <!-- header start -->
     <section class="header">
+        <hr class="hamburger-hr">
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div class="logo col-md-6 col-sm-6">
@@ -44,15 +45,61 @@
     <!-- header end -->
     <!-- Hemburger Menu start -->
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <!-- content     -->
+              <div class="row nav-main">
+             <div class="col-md-8 nav-left">
+               <div class="container pt-2 "> <a class="px-0" href="index.html"><img src="./assets/img/logo.png" alt="logo"></a>
+               <div class="d-md-flex d-block justify-content-around nav-link-main">
+                   <div class="nav-links">
+                       <h4>Home</h4>
+                       <h4>Services</h4>
+                       <h4>Blogs</h4>
+                   </div>
+                   <div class="nav-links">
+                    <h4>Home</h4>
+                    <h4>Services</h4>
+                    <h4>Blogs</h4>
+                </div>
+               </div>
+               <div class="d-flex social nav-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-skype"></i></a>
+            </div>
+               </div>
+             </div>
+             <div class="col-md-4 nav-right d-md-flex d-block  flex-column justify-content-between">
+                <div class="w-100"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+                <div class="container py-2">
+                    <h3 class="hire mt-2">Hire</h3>
+                    <img src="./assets/img/logo.png" class="mt-2" alt="logo">
+                    <br>
+                    <p class="mt-2">Describe Your Project Features, Requirements And Challenges</p>
+                <br>     
+                <button class="btn btn-hire us mt-2">
+                    Hire us
+                </button>
+                </div>
+                <div class="nav-right-bottom  ">
+                <div class="container px-4">                   
+                    <h2>Location</h2>
+                    <p class="mt-2">12 street, 12 road, Islamabad Pakistan</p>
+                </div>
+                <div class="mt-4 container">                   
+                    <h2>+92 345 67890</h2>
+                    <p class="mt-2">jerry.stanley@mail.com</p>
+                </div>
+                </div>
+             </div> 
         </div>
     </div>
+    
     <span class="hamburger" onclick="openNav()">&#9776;</span>
+    
       <!-- Hemburger Menu end -->
       <!-- Home Section strat -->
       <section class="home-section section" id="first">
+        
         <div class="container">
             <div class="home-content">
                 <div class="row">
@@ -76,7 +123,7 @@
     <!-- Vision section start -->
     <section class="vision-section section" id="second">
         <div class="section-head">
-            <h2>Our vision</h2>
+            <h2 class="glass-work">Our vision</h2>
         </div>
         <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -99,6 +146,9 @@
     <!-- Vision section end -->
     <!-- our project section start -->
     <section class="project-section section" id="third">
+        <div class="section-head">
+            <h2 class="glass-work"> projects</h2>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -124,15 +174,13 @@
                 <i class="next fas fa-caret-right"></i>
             </div>
         </div>
-        <div class="section-head">
-            <h2>projects</h2>
-        </div>
+
     </section>
     <!-- our project section end -->
     <!-- services section start -->
     <section class="services-section section" id="fourth">
         <div class="section-head">
-            <h2>services</h2>
+            <h2 class="glass-work">services</h2>
         </div>
         <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -223,8 +271,8 @@
                 </div>
             </div>
         </div>
-        <div class="section-head">
-            <h2>How we work</h2>
+        <div class="section-head w-100">
+            <h2 class="glass-work work-glass text-center">How we work</h2>
         </div>
     </section>
     <!-- work section end -->
@@ -249,22 +297,26 @@
             </div>
          </div>
          <div class="section-head">
-            <h2>Our clients</h2>
+            <h2 class="glass-work">Clients</h2>
         </div>
     </section>
     <!-- client section end -->
     <!-- Blog section start -->
     <section class="blog-section section" id="siventh">
+        
+        <div class="section-head">
+            <h2 class="glass-work">Our Blogs</h2>
+        </div>
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-4">
+            <div class="row d-md-flex justify-content-between align-items-center">
+                <div class="col-md-3 px-0">
                     <div class="section-title">
                         <h2>Our <span>blogs</span></h2>
                         <p class="my-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
                         <a href="#" class="btn-1">view all</a>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 px-0">
                     <div class="blog-box">
                         <img src="./assets/img/xps-1.png">
                         <div class="content">
@@ -275,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 px-0">
                     <div class="blog-box">
                         <img src="./assets/img/jona-novak-1y5yPZ0grys-unsplash.png">
                         <div class="content">
@@ -286,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-6">
+                <div class="col-md-2 col-sm-6 px-0">
                     <div class="blog-box">
                         <img src="./assets/img/zero-take-LMkP6IffuxA-unsplash (1).png">
                         <div class="content">
@@ -299,6 +351,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
     <!-- Blog section end -->
     <!-- contact section start -->
@@ -313,26 +366,26 @@
                     <a href="#">Portfolio</a>
                 </div>
             </div>
-            <div class="row justify-content-between align-items-center center">
-                <div class="col-md-3 col-sm-6">
-                    <div class="primary my-5">
+            <div class="row last-section">
+                <div class="col-md-4 col-sm-6">
+                    <div class="primary my-5 float-left">
                         <h2>LET'S TALK</h2>
                         <p>Contact us. We'll make time</p>
                     </div>
-                    <div class="seconadry my-5">
+                    <div class="seconadry my-5 float-left">
                         <h4>+92 345 67890</h4>
                         <p>jerry.stanley@mail.com</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <img src="./assets/img/Layer 1.png" alt="">
+                <div class="col-md-4 col-sm-6 text-center center-block">
+                    <img class="img-reponsive" src="./assets/img/Layer 1.png" alt="">
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="primary my-5">
+                <div class="col-md-4 col-sm-6">
+                    <div class="primary my-5 float-right">
                         <h2>Threekeys</h2>
                         <p>A JOURNEY TOWARDS INFINITY</p>
                     </div>
-                    <div class="seconadry my-5">
+                    <div class="seconadry my-5 float-right">
                         <h4>Location</h4>
                         <p>12 street, 12 road, Islamabad Pakistan</p>
                     </div>
@@ -352,7 +405,7 @@
                 <div class="col-md-2 col-sm-6 scroll">
                     <a href="#0">scroll up</a>
                 </div>
-                <div class="col-md-5 col-sm-6 social">
+                <div class="col-md-5 col-sm-6 social ">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>

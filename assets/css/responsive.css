@@ -213,6 +213,86 @@
   .work-section .section-head h2 {
     font-size: 3.2rem;
   }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navigation a {
+    margin: 5px !important;
+  }
+  .last-section h2 {
+    display: block;
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .last-section .seconadry {
+    display: block;
+    text-align: center;
+  }
+  .seconadry h4 {
+    font-size: 2rem;
+  }
+  .scroll-container section {
+    width: auto;
+    height: auto;
+  }
+
+  .blog-section {
+    height: auto !important;
+    padding: 80px 0 80px;
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+  .glass-work {
+    font-size: 2.8rem !important;
+  }
+  .section-head {
+    width: 100% !important;
+    text-align: center;
+  }
+  .nav-left .container {
+    height: auto !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-links h4 {
+    font-size: 28px;
+    margin: 1.8rem 0rem !important;
+  }
+  .closebtn {
+    left: auto !important;
+  }
+  .nav-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+  }
+  .nav-right {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nav-right-bottom {
+    width: 100% !important;
+    display: none !important;
+  }
+  .nav-link-main {
+    margin-top: 20px;
+  }
+  .last-section .float-right {
+    float: unset !important;
+    text-align: center;
+  }
+  .last-section .float-left {
+    float: unset !important;
+    text-align: center;
+  }
 }
 
 /* display none */

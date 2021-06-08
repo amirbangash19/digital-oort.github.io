@@ -12,8 +12,7 @@
 i.prev.fas.fa-caret-left.slick-arrow {
   position: absolute;
   top: 300px;
-  right: 52%;
-  transform: translateX(-52%);
+  right: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,13 +20,17 @@ i.prev.fas.fa-caret-left.slick-arrow {
 i.next.fas.fa-caret-right.slick-arrow {
   position: absolute;
   top: 300px;
-  left: 48%;
-  transform: translateX(-48%);
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.slick-arrow {
+  transition: 100ms;
+}
+.slick-arrow:hover {
+  transform: scale(1.05);
+}
 /* Slider */
 
 .slick-slide {
